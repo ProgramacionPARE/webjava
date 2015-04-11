@@ -20,6 +20,9 @@ public class Estacionamiento {
     private String direccion;
     private String nick;
     private int    __v;
+    
+    //Prueba de git
+    private String telefono;     
 
     private static JacksonDBCollection<Estacionamiento, String>
             coll = MongoDB.getCollection("estacionamientos", Estacionamiento.class, String.class);
