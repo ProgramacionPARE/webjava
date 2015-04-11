@@ -1,0 +1,14 @@
+@(content: Html)
+<div>
+    <ul class="nav nav-pills nav-justified">
+        <li role="presentation" ng-class="{active: urlMenu=='operaciones'}" ng-click="setActive('operaciones')"><a  ui-sref="admin.menu_estacionamiento.operaciones">Operaciones</a></li>
+        <li role="presentation" ng-class="{active: urlMenu=='estadisticas'}" ng-click="setActive('estadisticas')"><a  ui-sref="admin.menu_estacionamiento.estadisticas">Estadisticas</a></li>
+        <li role="presentation" ng-class="{active: urlMenu=='reportes'}" ng-click="setActive('repotes')"><a  ui-sref="admin.menu_estacionamiento.reportes">Reportes</a></li>
+    </ul>
+    <div class="panel panel-default">
+        <div ui-view  class="panel-body ">
+            @content
+        </div>
+    </div>
+</div>
+

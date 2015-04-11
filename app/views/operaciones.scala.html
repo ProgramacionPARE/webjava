@@ -1,0 +1,13 @@
+@(estacionamientos: List[Estacionamiento])
+
+@import helper._
+
+@main("Pare online"){
+    @modules.navbar()
+    @modules.menu(estacionamientos){
+       @modules.estacionamiento_menu{
+            @modules.operaciones{
+            }
+        }
+    }
+}

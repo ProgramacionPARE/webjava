@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Admin.index()
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+
+GET     /admin                      controllers.Admin.index()
+GET     /admin/:name                controllers.Admin.estacionamiento(name: String)
+
+GET     /admin/:name/operaciones    controllers.Admin.operaciones(name: String)
